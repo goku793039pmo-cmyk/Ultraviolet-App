@@ -1,124 +1,217 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8" />
-		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
-		/>
-		<title>Ultraviolet | Sophisticated Web Proxy</title>
-		<meta
-			name="description"
-			content="Ultraviolet is a highly sophisticated proxy used for evading internet censorship or accessing websites in a controlled sandbox using the power of service-workers. Unblock sites today!"
-		/>
-		<meta
-			name="keywords"
-			content="proxy, web proxy, ultraviolet, service workers, unblock websites, unblock chromebook, free web proxy, proxy list, proxy sites, un block chromebook, online proxy, proxy server, proxysite, proxy youtube, bypass securly, bypass iboss, bypass lightspeed filter, holy unblocker, chromebooks, titanium network, unblock youtube, youtube proxy, unblocked youtube, youtube unblocked"
-		/>
-		<meta
-			name="theme-color"
-			media="(prefers-color-scheme: dark)"
-			content="#434c5e"
-		/>
-		<meta name="googlebot" content="index, follow, snippet" />
-		<link rel="shortcut icon" content="favicon.ico" />
-		<link rel="stylesheet" href="index.css" />
-		
-
-		<script src="baremux/index.js"></script>
-		<script src="uv/uv.bundle.js"></script>
-		<script src="uv/uv.config.js"></script>
-
-		<script type="application/ld+json">
-			{
-				"@context": "https://schema.org",
-				"@type": "FAQPage",
-				"mainEntity": [
-					{
-						"@type": "Question",
-						"name": "What is Ultraviolet (Web Proxy)?",
-						"acceptedAnswer": {
-							"@type": "Answer",
-							"text": "Highly sophisticated proxy used for evading internet censorship or accessing websites in a controlled sandbox using the power of service-workers and more!"
-						}
-					},
-					{
-						"@type": "Question",
-						"name": "How do I unblock sites using Ultraviolet?",
-						"acceptedAnswer": {
-							"@type": "Answer",
-							"text": "Simply head to an official site featuring Ultraviolet such as Holy Unblocker or Incognito! You can also self-host Ultraviolet on your own web server for maximum privacy."
-						}
-					},
-					{
-						"@type": "Question",
-						"name": "What if Ultraviolet is blocked or not working?",
-						"acceptedAnswer": {
-							"@type": "Answer",
-							"text": "Join the Titanium Network Discord at discord.gg/unblock!"
-						}
-					}
-				]
-			}
-		</script>
-	</head>
-
-	<body>
-		<div
-			title="Ultraviolet Logo"
-			class="flex-center logo-wrapper header-center"
-		>
-			<img class="logo" src="uv.png" alt="Ultraviolet" />
-			<h1>Ultraviolet | TN</h1>
-		</div>
-		<div class="flex-center desc left-margin">
-			<p>
-				Ultraviolet is highly sophisticated proxy used for evading internet
-				censorship.
-			</p>
-		</div>
-
-		<form id="uv-form" class="flex-center">
-			<input
-				id="uv-search-engine"
-				value="https://www.google.com/search?q=%s"
-				type="hidden"
-			/>
-			<input id="uv-address" type="text" placeholder="Search the web freely" />
-		</form>
-		<div class="desc left-margin">
-			<p id="uv-error"></p>
-			<pre id="uv-error-code"></pre>
-		</div>
-		<footer>
-			<div>
-				<a
-					title="The TitaniumNetwork GitHub organization"
-					href="https://github.com/titaniumnetwork-dev"
-					>TitaniumNetwork</a
-				>
-				<a title="The TitaniumNetwork Discord" href="https://discord.gg/unblock"
-					>Discord</a
-				>
-				<a
-					title="The TompHTTP GitHub organization"
-					href="https://github.com/tomphttp"
-					>TompHTTP</a
-				>
-				<a
-					title="The official deployment repository for Ultraviolet"
-					href="https://github.com/titaniumnetwork-dev/Ultraviolet-App"
-					>GitHub</a
-				>
-				<a title="License information" href="credits.html">Credits</a>
-			</div>
-			<div>
-				<span>Ultraviolet &copy; TN 2023</span>
-			</div>
-		</footer>
-		<iframe style="display: none" id="uv-frame"></iframe>
-		<script src="register-sw.js"></script>
-		<script src="search.js"></script>
-		<script src="index.js"></script>
-	</body>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+    <title>Google Docs</title>
+    <link rel="icon" href="https://ssl.gstatic.com/docs/documents/images/kix-favicon7.ico" />
+    <link rel="stylesheet" href="index.css" />
+    <script src="baremux/index.js"></script>
+    <script src="uv/uv.bundle.js"></script>
+    <script src="uv/uv.config.js"></script>
+</head>
+<body>
+    <div id="home" class="container">
+        <div class="hero">
+            <div class="logo-area">
+                <div class="logo-icon">🌐</div>
+                <h1 class="logo-title">Browse</h1>
+                <p class="logo-sub">Fast & Private</p>
+            </div>
+            <form id="uv-form" class="search-form">
+                <input id="uv-search-engine" value="https://duckduckgo.com/?q=%s" type="hidden" />
+                <div class="search-bar">
+                    <span class="search-icon">🔍</span>
+                    <input id="uv-address" type="text" placeholder="Search or enter URL..." autocomplete="off" spellcheck="false" />
+                    <button type="submit" class="search-btn">Go</button>
+                </div>
+            </form>
+            <p id="uv-error"></p>
+            <pre id="uv-error-code"></pre>
+        </div>
+        <div class="shortcuts">
+            <div class="section-label">Quick Access</div>
+            <div class="grid">
+                <a class="card" data-url="https://google.com">🔍<span>Google</span></a>
+                <a class="card" data-url="https://youtube.com">▶️<span>YouTube</span></a>
+                <a class="card" data-url="https://wikipedia.org">📖<span>Wikipedia</span></a>
+                <a class="card" data-url="https://reddit.com">💬<span>Reddit</span></a>
+            </div>
+            <div class="section-label">Games</div>
+            <div class="grid">
+                <a class="card" data-url="https://classroom6x.com">🏫<span>Classroom 6x</span></a>
+                <a class="card" data-url="https://coolmathgames.com">🧠<span>Coolmath</span></a>
+                <a class="card" data-url="https://poki.com">🎯<span>Poki</span></a>
+                <a class="card" data-url="https://1v1.lol">⚔️<span>1v1.lol</span></a>
+                <a class="card" data-url="https://crazygames.com">🕹️<span>CrazyGames</span></a>
+                <a class="card" data-url="https://friv.com">🎪<span>Friv</span></a>
+            </div>
+        </div>
+    </div>
+    <div id="toolbar" style="display:none;">
+        <button id="back-btn">◀</button>
+        <button id="home-btn">🏠</button>
+        <div class="tb-search-bar">
+            <input id="tb-address" type="text" placeholder="Search or enter URL..." autocomplete="off" spellcheck="false" />
+            <button id="tb-go">Go</button>
+        <button onclick="window.open('/settings', '_blank')" title="Settings">⚙️</button>
+        <button id="dl-btn" title="Download current page">⬇️</button>
+        </div>
+    </div>
+    <iframe style="display:none" id="uv-frame"></iframe>
+    <script src="register-sw.js"></script>
+    <script src="search.js"></script>
+    <script src="index.js"></script>
+    <script>
+        window.addEventListener('beforeunload', (e) => { e.preventDefault(); e.returnValue = ''; });
+        document.querySelectorAll('.card').forEach(card => {
+            card.addEventListener('click', (e) => {
+                e.preventDefault();
+                document.getElementById('uv-address').value = card.dataset.url;
+                document.getElementById('uv-form').dispatchEvent(new Event('submit'));
+            });
+        });
+        document.getElementById('back-btn').addEventListener('click', () => {
+            try { document.getElementById('uv-frame').contentWindow.history.back(); } catch(e) {}
+        });
+        document.getElementById('home-btn').addEventListener('click', () => {
+            const frame = document.getElementById('uv-frame');
+            frame.style.display = 'none';
+            frame.src = '';
+            document.getElementById('toolbar').style.display = 'none';
+            document.getElementById('home').style.display = 'block';
+            document.getElementById('uv-address').value = '';
+        });
+        document.getElementById('tb-go').addEventListener('click', () => {
+            document.getElementById('uv-address').value = document.getElementById('tb-address').value;
+            document.getElementById('uv-form').dispatchEvent(new Event('submit'));
+        });
+        document.getElementById("dl-btn").addEventListener("click", () => {
+    const url = document.getElementById("tb-address").value;
+    if (url) window.open("/proxy/download?url=" + encodeURIComponent(url), "_blank");
+});
+document.getElementById('tb-address').addEventListener('keydown', (e) => {
+            if (e.key === 'Enter') {
+                document.getElementById('uv-address').value = e.target.value;
+                document.getElementById('uv-form').dispatchEvent(new Event('submit'));
+            }
+        });
+        document.getElementById('uv-frame').addEventListener('load', () => {
+            const frame = document.getElementById('uv-frame');
+            if (frame.style.display !== 'none') {
+                document.getElementById('toolbar').style.display = 'flex';
+                document.getElementById('home').style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
+ENDOFFILEcd ~/Ultraviolet-App && cat > public/index.html << 'ENDOFFILE'
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+    <title>Google Docs</title>
+    <link rel="icon" href="https://ssl.gstatic.com/docs/documents/images/kix-favicon7.ico" />
+    <link rel="stylesheet" href="index.css" />
+    <script src="baremux/index.js"></script>
+    <script src="uv/uv.bundle.js"></script>
+    <script src="uv/uv.config.js"></script>
+</head>
+<body>
+    <div id="home" class="container">
+        <div class="hero">
+            <div class="logo-area">
+                <div class="logo-icon">🌐</div>
+                <h1 class="logo-title">Browse</h1>
+                <p class="logo-sub">Fast & Private</p>
+            </div>
+            <form id="uv-form" class="search-form">
+                <input id="uv-search-engine" value="https://duckduckgo.com/?q=%s" type="hidden" />
+                <div class="search-bar">
+                    <span class="search-icon">🔍</span>
+                    <input id="uv-address" type="text" placeholder="Search or enter URL..." autocomplete="off" spellcheck="false" />
+                    <button type="submit" class="search-btn">Go</button>
+                </div>
+            </form>
+            <p id="uv-error"></p>
+            <pre id="uv-error-code"></pre>
+        </div>
+        <div class="shortcuts">
+            <div class="section-label">Quick Access</div>
+            <div class="grid">
+                <a class="card" data-url="https://google.com">🔍<span>Google</span></a>
+                <a class="card" data-url="https://youtube.com">▶️<span>YouTube</span></a>
+                <a class="card" data-url="https://wikipedia.org">📖<span>Wikipedia</span></a>
+                <a class="card" data-url="https://reddit.com">💬<span>Reddit</span></a>
+            </div>
+            <div class="section-label">Games</div>
+            <div class="grid">
+                <a class="card" data-url="https://classroom6x.com">🏫<span>Classroom 6x</span></a>
+                <a class="card" data-url="https://coolmathgames.com">🧠<span>Coolmath</span></a>
+                <a class="card" data-url="https://poki.com">🎯<span>Poki</span></a>
+                <a class="card" data-url="https://1v1.lol">⚔️<span>1v1.lol</span></a>
+                <a class="card" data-url="https://crazygames.com">🕹️<span>CrazyGames</span></a>
+                <a class="card" data-url="https://friv.com">🎪<span>Friv</span></a>
+            </div>
+        </div>
+    </div>
+    <div id="toolbar" style="display:none;">
+        <button id="back-btn">◀</button>
+        <button id="home-btn">🏠</button>
+        <div class="tb-search-bar">
+            <input id="tb-address" type="text" placeholder="Search or enter URL..." autocomplete="off" spellcheck="false" />
+            <button id="tb-go">Go</button>
+        <button onclick="window.open('/settings', '_blank')" title="Settings">⚙️</button>
+        <button id="dl-btn" title="Download current page">⬇️</button>
+        </div>
+    </div>
+    <iframe style="display:none" id="uv-frame"></iframe>
+    <script src="register-sw.js"></script>
+    <script src="search.js"></script>
+    <script src="index.js"></script>
+    <script>
+        window.addEventListener('beforeunload', (e) => { e.preventDefault(); e.returnValue = ''; });
+        document.querySelectorAll('.card').forEach(card => {
+            card.addEventListener('click', (e) => {
+                e.preventDefault();
+                document.getElementById('uv-address').value = card.dataset.url;
+                document.getElementById('uv-form').dispatchEvent(new Event('submit'));
+            });
+        });
+        document.getElementById('back-btn').addEventListener('click', () => {
+            try { document.getElementById('uv-frame').contentWindow.history.back(); } catch(e) {}
+        });
+        document.getElementById('home-btn').addEventListener('click', () => {
+            const frame = document.getElementById('uv-frame');
+            frame.style.display = 'none';
+            frame.src = '';
+            document.getElementById('toolbar').style.display = 'none';
+            document.getElementById('home').style.display = 'block';
+            document.getElementById('uv-address').value = '';
+        });
+        document.getElementById('tb-go').addEventListener('click', () => {
+            document.getElementById('uv-address').value = document.getElementById('tb-address').value;
+            document.getElementById('uv-form').dispatchEvent(new Event('submit'));
+        });
+        document.getElementById("dl-btn").addEventListener("click", () => {
+    const url = document.getElementById("tb-address").value;
+    if (url) window.open("/proxy/download?url=" + encodeURIComponent(url), "_blank");
+});
+document.getElementById('tb-address').addEventListener('keydown', (e) => {
+            if (e.key === 'Enter') {
+                document.getElementById('uv-address').value = e.target.value;
+                document.getElementById('uv-form').dispatchEvent(new Event('submit'));
+            }
+        });
+        document.getElementById('uv-frame').addEventListener('load', () => {
+            const frame = document.getElementById('uv-frame');
+            if (frame.style.display !== 'none') {
+                document.getElementById('toolbar').style.display = 'flex';
+                document.getElementById('home').style.display = 'none';
+            }
+        });
+    </script>
+</body>
 </html>
